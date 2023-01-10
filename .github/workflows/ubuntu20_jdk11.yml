@@ -8,7 +8,9 @@ jobs:
       matrix:
         java-version: [11]
       fail-fast: true
+      
     runs-on: ubuntu-20.04
+    
     steps:
       - name: Set up JDK
         uses: actions/setup-java@v1
