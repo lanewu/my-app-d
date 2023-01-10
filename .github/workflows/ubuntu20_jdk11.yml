@@ -23,7 +23,7 @@ jobs:
       
       - name: Build Chain ${{ matrix.java-version }}
         id: build-chain
-        uses: kiegroup/github-action-build-chain@v2.6.3
+        uses: kiegroup/github-action-build-chain@v2.6.25
         with:
           definition-file: https://raw.githubusercontent.com/${GROUP}/my-app-a/${BRANCH}/.ci/pull-request-config.yaml
         env:
