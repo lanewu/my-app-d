@@ -21,6 +21,10 @@ jobs:
         run: |
           sudo apt-get update
       
-      - name: Build
-        run: |
-          mvn package --batch-mode
+      - name: Build Chain ${{ matrix.java-version }}
+        id: build-chain
+        uses: kiegroup/github-action-build-chain@v2.6.3
+        with:
+          definition-file: https://raw.githubusercontent.com/${GROUP}/my-app-a/${BRANCH}/.ci/pull-request-config.yaml
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
