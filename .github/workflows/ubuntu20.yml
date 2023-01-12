@@ -1,0 +1,7 @@
+name: Ubuntu 20
+on: 
+  workflow_dispatch:
+
+jobs:
+  build:
+    uses: lanewu/my-app-a/.github/workflows/ubuntu20.yml@main
