@@ -4,4 +4,4 @@ on:
 
 jobs:
   build:
-    uses: lanewu/my-app-a/.github/workflows/ubuntu20.yml@main
+    uses: lanewu/my-app-a/.github/workflows/ubuntu20.yml@${BRANCH}
