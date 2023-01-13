@@ -9,7 +9,7 @@
   <url>http://maven.apache.org</url>
   
   <properties>
-    <commons.net.version>3.6</commons.net.version>
+    <commons.collections.version>3.2</commons.collections.version>
   </properties>
   
   <dependencies>
